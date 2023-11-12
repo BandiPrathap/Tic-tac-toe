@@ -1,0 +1,40 @@
+button{
+	width:80px;
+	height:80px;
+	background-color:white;
+	border-radius:10px;
+}
+.selectionBtn{
+	height:50px;
+	width:80px;
+	color:white;
+}
+.circle{
+	background-image:url("https://docs.blender.org/manual/en/latest/_images/grease-pencil_modes_draw_tools_circle_example-03.png");
+	background-size:cover;
+	height:40px;
+	width:40px;
+}
+.statusE{
+	color:#f122f5;
+	font-weight:bold;
+	font-size:30px;
+	border-size:2px;
+	border-color:black;
+	border:solid;
+	width:40%;
+}
+.startBg{
+	background-color:#aff52c;
+	color:#fc2828;
+	height:75%;
+}
+.draw{
+	color:red;
+	font-weight:bold;
+	font-size:30px;
+	border-size:2px;
+	border-color:black;
+	border:solid;
+	width:40%;
+}

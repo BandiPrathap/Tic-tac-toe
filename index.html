@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<meta name="robots" content="none,noarchive"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+	<div class="startBg">
+		<div class="container">
+			<div class="row">
+				<h1 class="col-12 text-center mt-5 mb-3">Tic Tac Toe</h1></br>
+				<div class="shadow-lg text-center mt-5 mb-5 w-75 col-12" style="border-radius:10px;color:#2848fc;background-color:#f0d27f">
+					<h1 class="mt-3 mb-2">Played With</h1>
+					<button style="background-color:#a2faf3;border-radius:8px;height:30px">Computer</button>
+					<button style="background-color:#a2faf3;border-radius:8px;height:30px" id="twoPlayers">2 players</button>
+					<p style="color:red">Note:Present this two buttons are desable.</p>
+					<button class="btn-primary mb-3" style="border-radius:10px;weight:60px;height:30px" id="restart">Play</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="startBg">
+	<div class="container">
+		<div class="row text-center">
+			<div class="text-center col-12 d-flex flex-row justify-content-center">
+				<button class="bg-info shadow-lg" id="box1"></button> 
+				<button class="bg-info shadow-lg" id="box2"></button> 
+				<button class="bg-info shadow-lg" id="box3"></button> 
+			</div>
+			<div class=" col-12 d-flex flex-row justify-content-center">
+				<button class="bg-info shadow-lg" id="box4"></button> 
+				<button class="bg-info shadow-lg" id="box5"></button> 
+				<button class="bg-info shadow-lg" id="box6"></button> 
+			</div>
+			<div class=" col-12 d-flex flex-row justify-content-center">
+				<button class="bg-info shadow-lg" id="box7"></button> 
+				<button class="bg-info shadow-lg" id="box8"></button> 
+				<button class="bg-info shadow-lg" id="box9"></button> 
+			</div>
+			<div class="col-12 d-none text-center pt-3" id="statusContainer">
+				<div class="d-flex flex-row justify-content-center">
+					<p id="status"></p>
+				</div>
+				<p style="color:red" id="note">Note:when you click play button the game will be restart.</p>
+			</div>
+			<div class="col-12 d-flex flex-row justify-content-center m-5">
+				<button class="bg-warning selectionBtn shadow-lg" id="crossBtn"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
+				<button class="bg-warning selectionBtn shadow-lg" id="circleBtn"><svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg></button>
+			</button>
+		</div>
+	</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
